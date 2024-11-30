@@ -16,7 +16,7 @@
     let isPlaying = false;
     let volume = 0.3;
     onMount(() => {
-      audio = new Audio('/music/tape.mp3'); // Put your music file in public/music/
+      audio = new Audio('./music/tape.mp3'); // Put your music file in public/music/
       audio.loop = true;
       audio.volume = volume;
     });
@@ -53,7 +53,7 @@
       {
         name: 'HuggingFace',
         url: 'https://huggingface.co/Delta-Vector',
-        imagePath: '/images/hf-icon.png',
+        imagePath: './images/hf-icon.png',
         type: 'image'
       },
       {
@@ -65,13 +65,13 @@
       {
         name: 'CharHub',
         url: 'https://chub.ai/users/MangyMango',
-        imagePath: '/images/charhub-icon.png',
+        imagePath: './images/charhub-icon.png',
         type: 'image'
       },
       {
         name: 'Personal Site',
         url: 'https://mango.sillytilly.org',
-        imagePath: '/images/mango-icon.png',
+        imagePath: './images/mango-icon.png',
         type: 'image'
       }
     ];
@@ -86,7 +86,7 @@
           class="theme-icon"
         />
         <img
-          src="/images/mascot.png"
+          src="./images/mascot.png"
           alt="Mascot"
           class="mascot-image"
           on:click={toggleDarkMode}
